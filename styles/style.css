@@ -33,7 +33,7 @@ body {
 
 .app {
     display: grid;
-    gap: 2.5rem;
+    gap: 7rem;
 }
 
 .app > * {
