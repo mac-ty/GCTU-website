@@ -31,8 +31,8 @@
         border-radius: 10px;
     }
 
-    .primary-navigation li.active a {
-        color: var(--navy-blue);
+    .primary-navigation li a {
+        color: var(--navy-blue) !important;
     }
 
     .primary-navigation[data-visible="true"] {
