@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .app > * {
+        padding-inline: 1.2rem;
+    }
+
+    .hamburger-bttn {
+        display: flex;
+        position: absolute;
+        z-index: 9999;
+        right: 15px;
+    }
+
+    .primary-navigation {
+        position: fixed;
+        top: 68px;
+        right: 0;
+        bottom: 0;
+        width: 80vw;
+        height: 100vh;
+        background-color: var(--navy-blue);
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 30px 16px 25px 16px;
+        transform: translateX(100%);
+        transition: all 250ms ease;
+    }
+
+    .primary-navigation li {
+        background-color: var(--gold);
+        padding: 12px 10px 12px 10px;
+        border-radius: 10px;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateY(0);
+    }
+
+    .primary-navigation li::after {
+        display: none;
+    }
+
+    .primary-navigation li:hover a {
+        color: var(--bg-color);
+    }
+
+    .gallery-section, 
+    .faculties {
+        grid-template-columns: 1fr;
+    }
+
+    .undergraduate-courses,
+    .graduate-courses,
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
