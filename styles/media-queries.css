@@ -26,9 +26,13 @@
     }
 
     .primary-navigation li {
-        background-color: var(--gold);
+        background-color: var(--bright-yellow);
         padding: 12px 10px 12px 10px;
         border-radius: 10px;
+    }
+
+    .primary-navigation li.active a {
+        color: var(--navy-blue);
     }
 
     .primary-navigation[data-visible="true"] {
