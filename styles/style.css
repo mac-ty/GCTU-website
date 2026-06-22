@@ -125,17 +125,19 @@ header.scrolled {
     list-style: none;
 }
 
-.primary-navigation a {
+.primary-navigation li {
     color: var(--bg-color);
     font-size: 1rem;
     transition: all 200ms ease;
 }
 
-.primary-navigation li {
+.primary-navigation a {
     position: relative;
+    display: block;
+    cursor: pointer;
 }
 
-.primary-navigation li::after {
+.primary-navigation a::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -148,21 +150,21 @@ header.scrolled {
     transition: all 200ms ease;
 }
 
-.primary-navigation li:not(.active):hover a {
+.primary-navigation a:not(.active):hover li {
     color: var(--bright-yellow);
 }
 
-.primary-navigation li.active a {
+.primary-navigation a.active li {
     color: var(--bright-yellow);
 }
 
-.primary-navigation li.active::after {
+.primary-navigation a.active::after {
     width: 100%;
     left: 0;
     right: 0;
 }
 
-.primary-navigation li:not(.active):hover::after {
+.primary-navigation a:not(.active):hover::after {
     width: 100%;
     left: 0;
     right: 0;

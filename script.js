@@ -30,5 +30,14 @@ tabs.forEach(tab => {
             t.classList.remove("active");
         })
         tab.classList.add("active");
+        hamburgerButton.setAttribute("aria-expanded", "false");
+        primaryNav.setAttribute("data-visible", "false");
     });
+});
+
+document.addEventListener('click', e => {
+    if (!e.target.closest('.primary-navigation') && !e.target.closest('.hamburger-bttn')) {
+        hamburgerButton.setAttribute("aria-expanded", "false");
+        primaryNav.setAttribute("data-visible", "false");
+    }
 });

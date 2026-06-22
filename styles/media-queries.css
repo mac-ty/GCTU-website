@@ -25,26 +25,35 @@
         transition: all 250ms ease;
     }
 
-    .primary-navigation li {
+    .primary-navigation a {
         background-color: var(--bright-yellow);
         padding: 12px 10px 12px 10px;
         border-radius: 10px;
     }
 
-    .primary-navigation li a {
-        color: var(--navy-blue) !important;
+    .primary-navigation a:not(.active) li {
+        color: var(--navy-blue);
     }
 
     .primary-navigation[data-visible="true"] {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
-    .primary-navigation li::after {
+    .primary-navigation a::after {
         display: none;
     }
 
-    .primary-navigation li:hover a {
+    .primary-navigation a:hover li {
         color: var(--bg-color);
+    }
+
+    .primary-navigation a.active {
+        background-color: transparent;
+        border: 1.5px solid var(--bright-yellow);
+    }
+
+    .primary-navigation a.active li {
+        color: var(--bright-yellow);
     }
 
     .gallery-section, 
