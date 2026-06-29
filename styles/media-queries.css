@@ -66,4 +66,9 @@
     footer {
         grid-template-columns: 1fr;
     }
+
+    footer .group-members {
+        justify-self: left;
+        grid-template-columns: 1fr;
+    }
 }

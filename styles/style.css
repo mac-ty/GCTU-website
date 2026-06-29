@@ -32,8 +32,13 @@ body {
 }
 
 .app {
+    padding-top: 7rem;
     display: grid;
     gap: 7rem;
+}
+
+.app.home {
+    padding-top: 0;
 }
 
 .app > * {
@@ -47,13 +52,18 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    background-color: var(--navy-blue);
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 200ms ease;
 }
 
-header.scrolled {
+header.home {
+    background-color: transparent;
+}
+
+header.home.scrolled {
     background-color: var(--navy-blue);
 }
 
@@ -199,6 +209,7 @@ header.scrolled {
 
 .hero a {
     display: block;
+    margin-bottom: 2rem;
 }
 
 .hero button {
@@ -253,7 +264,7 @@ h3 {
 .key-officers {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    grid-template-rows: 0.15fr 0.75fr 0.75fr 0.75fr;
+    grid-auto-rows: auto;
     row-gap: 2.5rem;
     column-gap: 1.5rem;
 }
@@ -364,7 +375,7 @@ footer {
     padding-top: 30px;
     padding-bottom: 16px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
 }
@@ -372,8 +383,7 @@ footer {
 footer .links-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 
 footer ul {
@@ -408,14 +418,24 @@ footer .socials a:hover svg {
     color: var(--bg-color);
 }
 
+footer .group-members {
+    justify-self: right;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2rem;
+}
+
 footer .group-members li {
     color: var(--bright-yellow);
 }
 
 footer .group-members li:first-child {
+    grid-column: 1/-1;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .copyright-text {
