@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Faculties</title>
 
     <!-- CSS Imports -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/media-queries.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
 
     <!-- Google Fonts Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="app home">
-        <header class="home">
+    <div class="app">
+        <header>
             <div class="logo-container">
                 <img src="../assets/gctu_logo.svg" alt="GCTU Logo">
                 <a href="#"><u>GCTU</u></a>
@@ -31,25 +31,32 @@
             </button>
 
             <ul class="primary-navigation" data-visible="false">
-                <a class="tab active" href="#"><li>Home</li></a>
-                <a class="tab" href="../pages/gallery.html"><li>Gallery</li></a>
-                <a class="tab" href="../pages/key-officers.html"><li>Key Officers</li></a>
-                <a class="tab" href="../pages/faculties.html"><li >Faculties</li></a>
-                <a class="tab" href="../pages/undergraduate-courses.html"><li>Undergraduate Courses</li></a>
-                <a class="tab" href="../pages/graduate-courses.html"><li>Graduate Courses</li></a>
+                <a class="tab" href="./index.html"><li>Home</li></a>
+                <a class="tab" href="./gallery.html"><li>Gallery</li></a>
+                <a class="tab" href="./key-officers.html"><li>Key Officers</li></a>
+                <a class="tab active" href="#"><li >Faculties</li></a>
+                <a class="tab" href="./undergraduate-courses.html"><li>Undergraduate Courses</li></a>
+                <a class="tab" href="./graduate-courses.html"><li>Graduate Courses</li></a>
             </ul>
         </header>
-        
-        <!-- hero section -->
-        <section class="hero" id="home">
-            <div>
-                <h2>National ICT Centre of Excellence</h2>
-                <p>
-                    At GCTU, we place utmost priority on technology-based education that gives our students a competitive edge in the realms of business and industry. We combine theory and practice to equip our students to develop unique and innovative solutions in Telecommunications, Business and ICT and we pride ourselves as pioneers of transnational education with our well established international partnerships and burgeoning global outlook. Choose GCTU and unleash your potential for greatness!
-                </p>
-                <a href="https://site.gctu.edu.gh/" target="_blank">
-                    <button>Visit the original GCTU website</button>
-                </a>
+
+        <section class="faculties" id="faculties">
+            <h3>Faculties</h3>
+            <div class="faculty">
+                <img src="../assets/library.webp" alt="Image of GCTU's Library">
+                <p>Library</p>
+            </div>
+            <div class="faculty">
+                <img src="../assets/computer-engineering.webp" alt="Computer Engineering at GCTU">
+                <p>FoE</p>
+            </div>
+            <div class="faculty">
+                <img src="../assets/cs.webp" alt="Computer Science at GCTU">
+                <p>FoCIS</p>
+            </div>
+            <div class="faculty">
+                <img src="../assets/business.webp" alt="Business at GCTU">
+                <p>Business School</p>
             </div>
         </section>
 
@@ -107,8 +114,7 @@
             </p>
         </footer>
     </div>
-    
 
-    <script src="../script.js" defer></script>
+    <script src="./script.js" defer></script>
 </body>
 </html>
